@@ -11,6 +11,8 @@ models that are used (or will be used):
 
 
 
+not needed, but show_raw_dataset infos can be executed to show infos about each columns
+
 first execute prepare_data.py to make input data convenient for a ML model
 
 then execute split_train_test.py to create train and test datasets 
