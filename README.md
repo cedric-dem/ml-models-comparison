@@ -1,22 +1,30 @@
 # ml-models-comparison
 
-comparison of machine learning models to predict loan approval
+Comparison of machine learning models to predict loan approval
 
-dataset source : https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data
+## Dataset
+The dataset relies on 13 inputs and one output: wheter a loan is approved or not
 
-models that are used (or will be used):
- K-nearest neighbours
- Neural Network
- Xtreme gradient boosting
+Dataset source : https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data
 
+### Dataset Preparation
+In the scripts folder, scripts can be used to 
+- first, prepare the dataset: convert data into numerical values (one-hot encoding and standardize input)
+- second, split main dataframe into train and test sets
 
+Not needed, but show_raw_dataset infos can be executed to show infos about each columns
 
-not needed, but show_raw_dataset infos can be executed to show infos about each columns
+## Models Used
 
-first execute prepare_data.py to make input data convenient for a ML model
+Each model is represented in a different jupyter notebook
+Models are trained on train set, and evaluated on test set
 
-then execute split_train_test.py to create train and test datasets 
+### K-nearest neighbours
 
+KNN classifies a data point based on the majority label of its closest neighbors in the feature space.
 
-then each jupyter notebook uses the models to predict test set, and is evaluated on it
+### Neural Network
+A collection of interconnected layers of nodes that learn complex, non-linear patterns in data
 
+### Xtreme Gradient Boosting
+XGBoost is an optimized ensemble method that builds decision trees sequentially, each correcting the errors of the previous ones
